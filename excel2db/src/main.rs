@@ -207,7 +207,7 @@ fn get_excel_sheet_names(
     }
 }
 
-/// 让用户选择工作表索引
+/// 选择工作表索引
 fn select_worksheet(sheet_names: &[String]) -> Result<usize, Box<dyn std::error::Error>> {
     println!("找到多个工作表，请输入要导出的工作表索引（0 - {}）：", sheet_names.len() - 1);
     for (i, name) in sheet_names.iter().enumerate() {
