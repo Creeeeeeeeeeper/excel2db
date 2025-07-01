@@ -1,0 +1,10 @@
+[package]
+name = "excel2db"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4"
+rusqlite = { version = "0.29", features = ["bundled"] }
+calamine = "0.22"
+csv = "1.1"
